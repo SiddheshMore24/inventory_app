@@ -206,7 +206,7 @@ class _HomePageState extends ConsumerState<HomePage> {
           actions: [
             ElevatedButton.icon(
               icon: Icon(Icons.edit),
-              label: Text('Edit'),
+              label: Text('Edit',style: TextStyle(color: Colors.white),),
               onPressed: () {
                 Navigator.of(context).pop();
                 _editProduct(context, ref, product);
@@ -217,7 +217,7 @@ class _HomePageState extends ConsumerState<HomePage> {
             ),
             ElevatedButton.icon(
               icon: Icon(Icons.delete),
-              label: Text('Delete'),
+              label: Text('Delete',style: TextStyle(color: Colors.white),),
               onPressed: () {
                 Navigator.of(context).pop();
                 _deleteProduct(ref, product.sku);

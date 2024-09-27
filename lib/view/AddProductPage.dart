@@ -48,7 +48,11 @@ class _AddProductPageState extends ConsumerState<AddProductPage> {
               children: [
                 Icon(Icons.check_circle, color: Colors.white),
                 SizedBox(width: 8),
-                Text('Product added successfully!'),
+                Text('Product added successfully!',
+                style: TextStyle(
+                  color: Colors.white
+                ),
+                ),
               ],
             ),
             duration: Duration(seconds: 2),
@@ -74,7 +78,7 @@ class _AddProductPageState extends ConsumerState<AddProductPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Product', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: Text('Add Product', style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white)),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.blue.shade800,
@@ -178,7 +182,7 @@ class _AddProductPageState extends ConsumerState<AddProductPage> {
                 SizedBox(height: 32),
                 ElevatedButton(
                   onPressed: _addProduct,
-                  child: Text('Add Product', style: TextStyle(fontSize: 18)),
+                  child: Text('Add Product', style: TextStyle(fontSize: 18,color: Colors.white)),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue.shade800,
                     padding: EdgeInsets.symmetric(vertical: 16),
